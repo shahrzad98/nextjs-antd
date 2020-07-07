@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CardLeague from "../../components/card";
+import CardLeague from "../../components/Card/card";
 import {Row, Col} from "antd";
 import Link from "next/link";
 

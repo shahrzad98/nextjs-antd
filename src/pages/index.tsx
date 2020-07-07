@@ -18,6 +18,8 @@ export default function Home() {
             visible: false,
         });
     };
+console.log(process.env.NEXT_PUBLIC_DB_USER)
+
     return (
         <div className="container">
             <Head>
