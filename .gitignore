@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+.cache
+.idea
+
+
 
 # testing
 /coverage
@@ -23,3 +27,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+### from previous version start ###
+/package-lock.json
+/yarn.lock
+/.vscode/
+nodemon.json
+logs
+build.tar.gz
+next.tar.gz
+### from previous version end ###
