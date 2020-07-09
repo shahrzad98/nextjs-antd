@@ -1,10 +1,23 @@
+import React from 'react';
 import {Drawer, Button} from 'antd';
-
+import {NextPage, NextPageContext} from 'next';
 import Head from 'next/head'
 import {useState} from "react";
 import Link from "next/link";
+import axios from 'axios'
 
-export default function Home() {
+interface Props {
+    stars: object;
+}
+
+const Home: NextPage<Props> = ({stars}) => {
+
+    Home.getInitialProps = async (ctx) => {
+        const res = await axios.get('https://api.github.com/repos/vercel/next.js')
+        return {stars: res.data}
+    }
+        console.log(stars)
+
     const [state, setState] = useState({visible: false});
 
     const showDrawer = () => {
@@ -18,11 +31,12 @@ export default function Home() {
             visible: false,
         });
     };
-console.log(process.env.NEXT_PUBLIC_DB_USER)
+    console.log(process.env.NEXT_PUBLIC_DB_USER)
 
 
     return (
         <div className="container">
+            {stars}
             <Head>
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico"/>
@@ -59,6 +73,7 @@ console.log(process.env.NEXT_PUBLIC_DB_USER)
                     Powered by{' '}
                     <img src="/vercel.svg" alt=" Logo" className="logo"/>
                 </a>
+
             </footer>
 
             <style jsx>{`
@@ -209,3 +224,5 @@ console.log(process.env.NEXT_PUBLIC_DB_USER)
         </div>
     )
 }
+
+export default Home;
