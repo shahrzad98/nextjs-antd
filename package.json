@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/node": "^14.0.22",
+    "@types/node": "^14.0.25",
     "antd": "^4.4.2",
     "axios": "^0.19.2",
     "cross-env": "^7.0.2",
