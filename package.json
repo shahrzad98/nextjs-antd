@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next",
+    "dev": "cross-env next",
     "build": "webpack-dashboard -- next build",
     "start": "next start",
     "checkupdate": "ncu"
@@ -11,7 +11,9 @@
   "dependencies": {
     "@types/node": "^14.0.22",
     "antd": "^4.4.2",
+    "antd-mobile": "^2.3.3",
     "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
     "cross-env": "^7.0.2",
     "enzyme": "^3.11.0",
     "i18next": "^19.6.0",
