@@ -44,9 +44,12 @@ const Home: NextPage<Props> = ({stars}) => {
 
             <Link href={'/a'}>Go to A</Link>
             <div className="site-drawer-render-in-current-wrapper">
-                Render in this
+
                 <div style={{marginTop: 16}}>
 
+                    <Button type="primary" onClick={showDrawer}>
+                        Open
+                    </Button>
                     <Button type="primary" onClick={showDrawer}>
                         Open
                     </Button>
