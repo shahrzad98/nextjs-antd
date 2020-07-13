@@ -9,14 +9,14 @@ type Props = {
 const Header = (props: Props) => {
     return (
         <div className={styles.header_container}>
-            <nav>
+            <div className={styles.header_logo}>
 
                 <img src="logo-darkBG.png" alt=""/>
 
                 <div className={styles.header_container__button}>
                     <span> OPEN IN APP </span>
                 </div>
-            </nav>
+            </div>
             <div className={styles.header_accessButtons__container}>
 
                 <div>
