@@ -3,6 +3,7 @@ import {NextPage} from 'next';
 // import FastClick from 'FastClick'
 import Header from "../components/shared/Header/Header";
 import {Footer} from "../components/shared/Footer/footer";
+import Form from "../components/Core-Components/Form";
 
 
 interface Props {
@@ -14,6 +15,7 @@ const Home: NextPage<Props> = ({stars}) => {
     return (
         <>
             <Header/>
+            <Form/>
             <Footer/>
         </>
     )
