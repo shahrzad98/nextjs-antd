@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "cross-env next",
-    "build": "webpack-dashboard -- next build",
+    "build": "webpack-dashboard --  next build",
     "start": "next start",
     "checkupdate": "ncu"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@types/node": "^14.0.22",
+    "@zeit/next-sass": "^1.0.1",
     "antd": "^4.4.2",
     "antd-mobile": "^2.3.3",
     "axios": "^0.19.2",
@@ -35,6 +39,7 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.43",
+    "next-fonts": "^1.4.0",
     "typescript": "^3.9.6",
     "webpack-bundle-analyzer": "^3.8.0"
   }
