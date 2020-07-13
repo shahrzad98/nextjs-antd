@@ -27,6 +27,7 @@ const Header = (props: Props) => {
                     <img src="bell (2).png" alt=""/>
                 </div>
 
+
                 <div>
                     <FontAwesomeIcon icon={faChevronDown}/>
                 </div>
