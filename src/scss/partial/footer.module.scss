@@ -1,0 +1,29 @@
+.footer_container {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  height: 45px;
+  background-color: #031A4D;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  & a img {
+    width: 26px!important;
+    height: 25px!important;
+  }
+
+  & div {
+    align-self: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: rgb(41,63,110);
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
+
+    }
+  }
+
+}

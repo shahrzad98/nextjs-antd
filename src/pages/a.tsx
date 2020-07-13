@@ -14,12 +14,7 @@ const A = ({stars}) => {
     //     return <div>Next stars: {stars}</div>
     // }
 
-    A.getInitialProps = async (ctx) => {
-        const res = await fetch('https://api.github.com/repos/vercel/next.js')
-        const json = await res.json()
-        console.log(json)
-        return {stars: json.stargazers_count}
-    }
+
 
     const {Option, getMentions} = Mentions;
     const [state, setState] = useState('mail');
